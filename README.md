@@ -6,19 +6,19 @@ Tools that spam a scammer's Telegram bot to make it rate limited
 ## Installation
 
 1. First of all, you need to [download and install Python](https://python.org/downloads).
-2. 
+
 ![Screenshot of Python Downloads page.](https://github.com/Fluntyy/scammer-revenge/assets/106996695/2f118958-ba70-4198-8af8-acfcf4acba15)
 
-3. Install the required dependency.
+2. Install the required dependency.
 ```console
 ~/Scammer-Revenge$ pip install requests
 ```
 
 3. Download and extract the latest `scammer-revenge-v.X.X.zip` [here](https://github.com/Fluntyy/scammer-revenge/releases/latest).
-4. 
+
 ![Screenshot of Scammer Revenge releases page.](https://github.com/Fluntyy/scammer-revenge/assets/106996695/10c37635-880d-466f-8941-e5f1c8aad273)
 
-5. Run `main.py`.
+4. Run `main.py`.
 ```console
 ~/Scammer-Revenge$ python main.py
 ```
