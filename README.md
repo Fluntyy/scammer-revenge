@@ -1,7 +1,7 @@
 
 # Scammer Revenge
 
-Tools that spam a scammer's Telegram bot to make it rate limited
+Tools that spam a scammer's Telegram bot to make it rate limited.
 
 ## Installation
 
