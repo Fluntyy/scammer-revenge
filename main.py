@@ -54,7 +54,10 @@ def send_message():
         elif not error:
             print(f"\nError sending messages! {response.json().get('description')}")
             error = True
-            time.sleep(int(''.join(filter(str.isdigit, response.json().get('description')))))
+            if "Too Many Requests: retry after" in response.json().get('description'):
+                time.sleep(int(''.join(filter(str.isdigit, response.json().get('description')))))
+            else:
+                os._exit(0)
 
 threading.Thread(target=send_message).start()
 threading.Thread(target=send_message).start()
