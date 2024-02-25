@@ -13,9 +13,9 @@ def load_config():
     else:
         return None
 
-def save_config(token, chat_id):
+def save_config(token, chat_id, threads):
     config = ConfigParser()
-    config['Configuration'] = {'Token': token, 'ChatID': chat_id}
+    config['Configuration'] = {'Token': token, 'ChatID': chat_id, 'Threads': threads}
     with open('config.ini', 'w') as f:
         config.write(f)
 
@@ -24,11 +24,17 @@ config = load_config()
 if config:
     token = config.get('Configuration', 'Token')
     chat_id = config.get('Configuration', 'ChatID')
+    threads = config.get('Configuration', 'Threads')
 else:
     print("Configuration file not found. Please provide the following:")
     token = input("Enter your Telegram bot token: ")
     chat_id = input("Enter the chat ID of the scammer: ")
-    save_config(token, chat_id)
+    threads = 10
+    confirmation = input("Would you like to save the configuration? (y/n) ")
+    if confirmation == "y":
+        save_config(token, chat_id, threads)
+    else:
+        pass
 
 message = input("Enter the message to send to the scammer: ")
 
@@ -59,13 +65,5 @@ def send_message():
             else:
                 os._exit(0)
 
-threading.Thread(target=send_message).start()
-threading.Thread(target=send_message).start()
-threading.Thread(target=send_message).start()
-threading.Thread(target=send_message).start()
-threading.Thread(target=send_message).start()
-threading.Thread(target=send_message).start()
-threading.Thread(target=send_message).start()
-threading.Thread(target=send_message).start()
-threading.Thread(target=send_message).start()
-threading.Thread(target=send_message).start()
+for _ in range(int(threads)):
+    threading.Thread(target=send_message).start()
