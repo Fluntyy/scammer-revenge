@@ -54,8 +54,7 @@ def send_message():
         elif not error:
             print(f"\nError sending messages! {response.json().get('description')}")
             error = True
-            sleep_time = int(''.join(filter(str.isdigit, response.json().get('description'))))
-            time.sleep(sleep_time)
+            time.sleep(int(''.join(filter(str.isdigit, response.json().get('description')))))
 
 threading.Thread(target=send_message).start()
 threading.Thread(target=send_message).start()
