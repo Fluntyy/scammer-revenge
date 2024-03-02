@@ -5,6 +5,11 @@ Tools that spam a scammer's Telegram bot to make it rate limited.
 
 ## Installation
 
+### Automatic
+If you're on Windows, just download and run `scammer-revenge-X-X-windows.exe`
+
+### Manual
+
 1. First of all, you need to [download and install Python](https://python.org/downloads).
 
 ![Screenshot of Python Downloads page.](https://github.com/Fluntyy/scammer-revenge/assets/106996695/2f118958-ba70-4198-8af8-acfcf4acba15)
@@ -45,5 +50,5 @@ Enter a message that you want to send to the scammer, then this tool will spam t
 
 ## License
 
-[Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
+This tool is lisenced under [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/).
 
