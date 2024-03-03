@@ -1,14 +1,17 @@
 
-# Scammer Revenge
+# 👿 Scammer Revenge
 
 Tools that spam a scammer's Telegram bot to make it rate limited.
 
-## Installation
+## ⚙️ Installation
 
-### Automatic
-If you're on Windows, just download and run `scammer-revenge-X-X-windows.exe`
+### 🤖 Automatic
 
-### Manual
+If you're on Windows, just download and run `scammer-revenge-X.X-windows.exe` [here](https://github.com/Fluntyy/scammer-revenge/releases/latest).
+
+![Screenshot of "scammer-revenge-1.0-windows.exe](https://github.com/Fluntyy/scammer-revenge/assets/106996695/99975e6c-f4f3-44de-a2c1-67737439ce17)
+
+### 🦽 Manual
 
 1. First of all, you need to [download and install Python](https://python.org/downloads).
 
@@ -28,7 +31,7 @@ pip install requests
 python main.py
 ```
 
-## Usage
+## 💡 Usage
 When you're running this tool for the first time, it will ask you for a token and Chat ID like this:
 ```
 Configuration file not found. Please provide the following:
@@ -38,7 +41,7 @@ Enter the chat ID of the scammer:
 
 Enter a message that you want to send to the scammer, then this tool will spam the scammer's Telegram bot.
 
-## FAQ
+## ❓ FAQ
 
 * **Q:** What do you mean by 'scammer'?
   
@@ -48,7 +51,7 @@ Enter a message that you want to send to the scammer, then this tool will spam t
   
 **A:** You will need to reverse-engineer scammer's APK virus to obtain the token.
 
-## License
+## 📄 License
 
 This tool is lisenced under [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/).
 
