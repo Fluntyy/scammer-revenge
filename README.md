@@ -3,6 +3,10 @@
 
 Tools that spam a scammer's Telegram bot to make it rate limited.
 
+## 🔑 Obtaining the token
+
+[Here's](obtain_token.md) the full guide to obtain the scammer's token.
+
 ## ⚙️ Installation
 
 ### 🤖 Automatic
